@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.IzbornikController">
+   <children>
+      <TableView fx:id="tablica" layoutX="233.0" layoutY="193.0" onMouseClicked="#odaberiLekcija" prefHeight="466.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="tablicaId" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="tablicaNaslov" prefWidth="128.0" text="Naslov" />
+            <TableColumn fx:id="tablicaTrajanje" prefWidth="83.0" text="Trajanje" />
+            <TableColumn fx:id="tablicaTezina" minWidth="0.0" prefWidth="128.0" text="Tezina" />
+            <TableColumn fx:id="tablicaAutor" minWidth="0.0" prefWidth="62.0" text="Autor" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="aaa" layoutX="832.0" layoutY="355.0" onAction="#test" prefHeight="109.0" prefWidth="141.0" text="Test" />
+      <JFXButton fx:id="odjava" layoutX="912.0" layoutY="31.0" onAction="#odjava" prefHeight="93.0" prefWidth="106.0" text="." />
+   </children>
+</AnchorPane>

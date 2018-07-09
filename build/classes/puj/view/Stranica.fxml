@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.AdministracijaLekcijaController">
+   <children>
+      <Label fx:id="labela" layoutX="91.0" layoutY="31.0" />
+      <JFXTextField fx:id="naslov" alignment="CENTER" focusColor="#ff9946" layoutX="777.0" layoutY="279.0" prefHeight="31.0" prefWidth="466.0" promptText="Unesite naslov" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="podNaslov" alignment="CENTER" focusColor="#ff9946" layoutX="777.0" layoutY="371.0" prefHeight="31.0" prefWidth="466.0" promptText="Unesite podnaslov" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="stranicaBtn" layoutX="777.0" layoutY="702.0" onAction="#dodajStranicu" prefHeight="58.0" prefWidth="178.0" text="Dodaj stranicu">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <Label alignment="CENTER" layoutX="169.0" layoutY="7.0" prefHeight="118.0" prefWidth="942.0" stylesheets="@../login.css" text="JARVIS - Dodaj stranice" textFill="WHITE">
+         <font>
+            <Font name="Freestyle Script" size="130.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="gotovo" layoutX="1052.0" layoutY="702.0" onAction="#idiKuca" prefHeight="58.0" prefWidth="168.0" text="Gotovo">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="sadrzaj" focusColor="#ff9946" layoutX="768.0" layoutY="441.0" prefHeight="244.0" prefWidth="484.0" promptText="Unesite sadržaj:" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+      </JFXTextArea>
+      <JFXButton fx:id="kuca" layoutX="24.0" layoutY="25.0" onAction="#idiKuca" prefHeight="144.0" prefWidth="154.0" text="Button">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="odjava" layoutX="1111.0" layoutY="25.0" onAction="#odjava" prefHeight="144.0" prefWidth="154.0" text=".">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="labelUspjeh" layoutX="800.0" layoutY="760.0" textFill="#eb0000">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

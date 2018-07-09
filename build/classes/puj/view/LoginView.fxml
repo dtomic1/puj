@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="380.000022070315" minWidth="708.9193725585938" prefHeight="428.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.LoginController">
+  <children>
+    <Label fx:id="label" alignment="CENTER" layoutX="30.0" layoutY="24.0" minHeight="16.0" minWidth="69.0" prefHeight="105.0" prefWidth="736.0" text="Dobrodošli u Jarvis" textFill="WHITE">
+         <font>
+            <Font name="Freestyle Script" size="90.0" />
+         </font></Label>
+    <Label fx:id="greskaLbl" alignment="CENTER" layoutX="521.0" layoutY="314.0" prefHeight="44.0" prefWidth="264.0" textFill="RED" wrapText="true">
+      <font>
+        <Font name="System Italic" size="19.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="253.0" fitWidth="440.0" layoutX="7.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../resources/slika.jpg" />
+      </image>
+    </ImageView>
+      <JFXTextField fx:id="korisnickoImeTxt" alignment="CENTER" focusColor="#fb6c34" labelFloat="true" layoutX="521.0" layoutY="190.0" promptText="Unesite Email:" unFocusColor="#fffefe">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="lozinkaTxt" alignment="CENTER" focusColor="#fb6c34" labelFloat="true" layoutX="521.0" layoutY="266.0" promptText="Unesite lozinku:" unFocusColor="WHITE">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="button" layoutX="577.0" layoutY="358.0" onAction="#prijava" prefHeight="44.0" prefWidth="152.0" text="Prijava" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="button1" layoutX="644.0" layoutY="-2.0" onAction="#registracija" prefHeight="48.0" prefWidth="152.0" ripplerFill="WHITE" text="Novi korisnik?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+  </children>
+  <stylesheets>
+    <URL value="@../login.css" />
+  </stylesheets>
+</AnchorPane>

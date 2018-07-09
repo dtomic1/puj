@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 13, 2018, 9:13:42 PM
+    Author     : David
+*/
+
+#AnchorPane {
+    -fx-background-color: #57B1FF; 
+}
+
+#button, #button1, #btnLekcija,#brisi,#btnSpasi, #btnBrisi, #izbor, #btnStudent, #stranicaBtn, #gotovo, #aaa, #buttona, #pomdodajLekciju{
+    -fx-background-color: #ff9946;
+}
+
+
+
+#nazad{
+              
+    -fx-background-image: url("/resources/nazad.png");
+    -fx-background-size: 65 65;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;          
+}
+
+#btnLekcija{
+    -fx-background-image: url("/resources/schoolboard.jpg");
+    -fx-background-size: 600 515;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;    
+}
+
+#btnStudent{
+    -fx-background-image: url("/resources/students.jpg");
+    -fx-background-size: 600 515;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;    
+}
+
+.jfx-text-field, .jfx-password-field {
+    -fx-text-inner-color: white;
+   
+}
+
+#dodajLekciju{
+    -fx-background-color: #ff9946;
+}
+
+#kuca{
+    -fx-background-image: url("/resources/house.png");
+    -fx-background-size: 106 93;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;  
+}
+
+#odjava{
+    -fx-background-image: url("/resources/odjava.png");
+    -fx-background-size: 106 93;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #ff9946; 
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold; 
+   -fx-alignment: CENTER_LEFT;
+   
+}
+.table-view .cell{
+   -fx-cell-size: 90;
+  -fx-alignment: center-left;
+  -fx-background-color: #29292D;
+  -fx-border-color: #29292D;
+  -fx-text-fill: lightgray;
+  -fx-alignment: CENTER_LEFT;
+   
+}
+
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive( #6622CC,80%);
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #6622CC,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.AdministracijaStudentController">
+   <children>
+      <TableView fx:id="table" layoutX="35.0" layoutY="396.0" onMouseClicked="#odaberiOsobu" prefHeight="348.0" prefWidth="453.0">
+         <columns>
+            <TableColumn fx:id="tableId" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="tableIme" prefWidth="75.0" text="Ime" />
+            <TableColumn fx:id="tablePrezime" prefWidth="75.0" text="Prezime" />
+            <TableColumn fx:id="tableEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tableLozinka" prefWidth="75.0" text="Lozinka" />
+            <TableColumn fx:id="tableIndeks" prefWidth="75.0" text="Indeks" />
+         </columns>
+      </TableView>
+      <Button fx:id="izbor" layoutX="860.0" layoutY="176.0" mnemonicParsing="false" onAction="#idiIzbor" text="Izbornik" />
+      <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="128.0" prefWidth="754.0" stylesheets="@../login.css" text="Dobrodošli u administraciju" textFill="WHITE">
+         <font>
+            <Font name="Freestyle Script" size="110.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="ime" focusColor="#ff9946" layoutX="674.0" layoutY="306.0" prefHeight="31.0" prefWidth="306.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prezime" focusColor="#ff9946" layoutX="674.0" layoutY="378.0" prefHeight="31.0" prefWidth="306.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#ff9946" layoutX="674.0" layoutY="450.0" prefHeight="31.0" prefWidth="306.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="indeks" focusColor="#ff9946" layoutX="674.0" layoutY="598.0" prefHeight="31.0" prefWidth="306.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="btnBrisi" layoutX="845.0" layoutY="702.0" mnemonicParsing="false" onAction="#brisiOsobu" prefHeight="27.0" prefWidth="74.0" text="Brisi" />
+      <Button fx:id="btnSpasi" layoutX="689.0" layoutY="702.0" mnemonicParsing="false" onAction="#dodajOsobu" prefHeight="27.0" prefWidth="68.0" text="Spasi" />
+      <JFXPasswordField fx:id="lozinka" layoutX="674.0" layoutY="522.0" prefHeight="31.0" prefWidth="306.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="595.0" layoutY="332.0" text="Ime:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="404.0" text="Prezime:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="573.0" layoutY="469.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="547.0" text="Lozinka:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="565.0" layoutY="623.0" text="Indeks:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="kuca" layoutX="14.0" layoutY="18.0" onAction="#idiKuca" prefHeight="115.0" prefWidth="106.0" text="Button">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="odjava" layoutX="897.0" layoutY="29.0" onAction="#odjava" prefHeight="93.0" prefWidth="106.0" text=".">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

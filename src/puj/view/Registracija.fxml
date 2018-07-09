@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="795.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.RegistracijaController">
+   <children>
+      <JFXTextField fx:id="ime" alignment="CENTER" labelFloat="true" layoutX="600.0" layoutY="34.0" promptText="Vaše ime?" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="prezime" alignment="CENTER" labelFloat="true" layoutX="600.0" layoutY="94.0" promptText="Vaše prezime?" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="4.0" prefHeight="104.0" prefWidth="524.0" text="Jarvis - Registracija" textFill="WHITE">
+         <font>
+            <Font name="Freestyle Script" size="75.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="email" alignment="CENTER" labelFloat="true" layoutX="600.0" layoutY="158.0" promptText="Vaš Email?" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      
+      <JFXTextField fx:id="indeks" alignment="CENTER" labelFloat="true" layoutX="600.0" layoutY="276.0" promptText="Vaš broj indeksa?" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="lozinka" alignment="CENTER" labelFloat="true" layoutX="600.0" layoutY="214.0" promptText="Vaša lozinka?" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXPasswordField>
+      <ImageView fitHeight="266.0" fitWidth="450.0" layoutX="7.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/slika.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="button" layoutX="608.0" layoutY="370.0" onAction="#dodajOsobu" prefHeight="44.0" prefWidth="152.0" text="Kreiraj račun" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nazad" layoutX="7.0" layoutY="5.0" onAction="#idiNazad" prefHeight="114.0" prefWidth="101.0" />
+   </children>
+</AnchorPane>

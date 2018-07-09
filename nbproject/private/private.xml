@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/puj/controller/AdministracijaController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>26</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/service/LoginService.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/service/LekcijaService.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/service/OsobaService.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/model/Lekcija.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/AdministracijaController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/model/Stranica.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/Utils.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/LoginView.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/service/StranicaService.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/AdministracijaStudent.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/Registracija.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/model/Osoba.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/interfaces/model.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/model/Baza.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/Stranica.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/RegistracijaController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/Izbornik.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/model/Konekcija.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/Puj.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/Lekcije.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/login.css</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/IzbornikController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/Administracija.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/AdministracijaLekcijaController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/LekcijeController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/AdministracijaStudentController.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/view/AdministracijaLekcija.fxml</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/puj/src/puj/controller/LoginController.java</file>
+        </group>
+    </open-files>
+</project-private>
