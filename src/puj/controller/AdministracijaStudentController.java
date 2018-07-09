@@ -67,8 +67,6 @@ public class AdministracijaStudentController implements Initializable {
     @FXML
     JFXTextField indeks;
     
-    @FXML
-    Button izbor;
     
         
    
@@ -93,9 +91,7 @@ public class AdministracijaStudentController implements Initializable {
     
     @FXML
     TableColumn tableIndeks;
-    
-    
-    
+
     
     @FXML
     public void dodajOsobu (ActionEvent evt) {

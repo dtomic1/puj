@@ -10,7 +10,7 @@
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib/jfoenix-8.0.4.jar" size="2487326" download="eager" />
     <jar href="lib/mysql-connector-java-5.1.46.jar" size="1004838" download="eager" />
-    <jar href="puj.jar" size="1570184" download="eager" />
+    <jar href="puj.jar" size="1573305" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="puj" >
     <param name="requiredFXVersion" value="8.0+"/>

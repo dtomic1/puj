@@ -77,9 +77,7 @@ public class AdministracijaLekcijaController implements Initializable {
    @FXML
    Label labelUspjeh;
    
-   
-    
-    
+
     public static int idLekcije;
     public int brojLekcije = 1;
     
@@ -98,8 +96,7 @@ public class AdministracijaLekcijaController implements Initializable {
          if(napredno.isSelected()){
              sTezina = "Napredno";
          }
-         
-         
+
             Lekcija k = new Lekcija (0, sNaslov, sTrajanje, sTezina,autor);
             LekcijaService.lekcijaService.spasi(k);
             idLekcije = k.getId();
@@ -111,8 +108,7 @@ public class AdministracijaLekcijaController implements Initializable {
             Node source = (Node) event.getSource();
             Stage stage = (Stage)source.getScene().getWindow();
             Utils.prikazi(stage, "Stranica");
-            
-            
+ 
         }
    
     @FXML

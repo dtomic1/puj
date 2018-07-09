@@ -17,7 +17,7 @@ import java.sql.SQLException;
  */
 public class LoginService {
     private static OsobaService osobaService = new OsobaService();
-    static Osoba prijavljeni = null;
+    public static Osoba prijavljeni = null;
     
     public static boolean login (String email, String lozinka) {
         try {
@@ -43,4 +43,6 @@ public class LoginService {
     public static Osoba logiranaOsoba () {
         return LoginService.prijavljeni;
     }
+    
+    
 }

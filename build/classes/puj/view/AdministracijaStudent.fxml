@@ -12,70 +12,75 @@
 
 <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.AdministracijaStudentController">
    <children>
-      <TableView fx:id="table" layoutX="35.0" layoutY="396.0" onMouseClicked="#odaberiOsobu" prefHeight="348.0" prefWidth="453.0">
+      <TableView fx:id="table" layoutX="10.0" layoutY="313.0" onMouseClicked="#odaberiOsobu" prefHeight="445.0" prefWidth="589.0">
          <columns>
-            <TableColumn fx:id="tableId" prefWidth="75.0" text="Id" />
-            <TableColumn fx:id="tableIme" prefWidth="75.0" text="Ime" />
-            <TableColumn fx:id="tablePrezime" prefWidth="75.0" text="Prezime" />
-            <TableColumn fx:id="tableEmail" prefWidth="75.0" text="Email" />
-            <TableColumn fx:id="tableLozinka" prefWidth="75.0" text="Lozinka" />
-            <TableColumn fx:id="tableIndeks" prefWidth="75.0" text="Indeks" />
+            <TableColumn fx:id="tableId" prefWidth="48.0" text="Id" />
+            <TableColumn fx:id="tableIme" prefWidth="109.0" text="Ime" />
+            <TableColumn fx:id="tablePrezime" prefWidth="131.0" text="Prezime" />
+            <TableColumn fx:id="tableEmail" prefWidth="139.0" text="Email" />
+            <TableColumn fx:id="tableLozinka" prefWidth="102.0" text="Lozinka" />
+            <TableColumn fx:id="tableIndeks" prefWidth="56.0" text="Indeks" />
          </columns>
       </TableView>
-      <Button fx:id="izbor" layoutX="860.0" layoutY="176.0" mnemonicParsing="false" onAction="#idiIzbor" text="Izbornik" />
       <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="128.0" prefWidth="754.0" stylesheets="@../login.css" text="Dobrodošli u administraciju" textFill="WHITE">
          <font>
             <Font name="Freestyle Script" size="110.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="ime" focusColor="#ff9946" layoutX="674.0" layoutY="306.0" prefHeight="31.0" prefWidth="306.0">
+      <JFXTextField fx:id="ime" focusColor="#ff9946" layoutX="724.0" layoutY="306.0" prefHeight="65.0" prefWidth="279.0">
          <font>
             <Font size="30.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="prezime" focusColor="#ff9946" layoutX="674.0" layoutY="378.0" prefHeight="31.0" prefWidth="306.0">
+      <JFXTextField fx:id="prezime" focusColor="#ff9946" layoutX="724.0" layoutY="384.0" prefHeight="65.0" prefWidth="279.0">
          <font>
             <Font size="30.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="email" focusColor="#ff9946" layoutX="674.0" layoutY="450.0" prefHeight="31.0" prefWidth="306.0">
+      <JFXTextField fx:id="email" focusColor="#ff9946" layoutX="724.0" layoutY="450.0" prefHeight="65.0" prefWidth="279.0">
          <font>
             <Font size="30.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="indeks" focusColor="#ff9946" layoutX="674.0" layoutY="598.0" prefHeight="31.0" prefWidth="306.0">
+      <JFXTextField fx:id="indeks" focusColor="#ff9946" layoutX="724.0" layoutY="594.0" prefHeight="65.0" prefWidth="279.0">
          <font>
             <Font size="30.0" />
          </font>
       </JFXTextField>
-      <Button fx:id="btnBrisi" layoutX="845.0" layoutY="702.0" mnemonicParsing="false" onAction="#brisiOsobu" prefHeight="27.0" prefWidth="74.0" text="Brisi" />
-      <Button fx:id="btnSpasi" layoutX="689.0" layoutY="702.0" mnemonicParsing="false" onAction="#dodajOsobu" prefHeight="27.0" prefWidth="68.0" text="Spasi" />
-      <JFXPasswordField fx:id="lozinka" layoutX="674.0" layoutY="522.0" prefHeight="31.0" prefWidth="306.0">
+      <Button fx:id="btnBrisi" layoutX="849.0" layoutY="696.0" mnemonicParsing="false" onAction="#brisiOsobu" prefHeight="46.0" prefWidth="96.0" text="Brisi" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="btnSpasi" layoutX="704.0" layoutY="696.0" mnemonicParsing="false" onAction="#dodajOsobu" prefHeight="48.0" prefWidth="106.0" text="Spasi" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <JFXPasswordField fx:id="lozinka" layoutX="724.0" layoutY="529.0" prefHeight="65.0" prefWidth="279.0">
          <font>
             <Font size="30.0" />
          </font>
       </JFXPasswordField>
-      <Label layoutX="595.0" layoutY="332.0" text="Ime:" textFill="WHITE">
+      <Label layoutX="661.0" layoutY="316.0" text="Ime:" textFill="WHITE">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="547.0" layoutY="404.0" text="Prezime:" textFill="WHITE">
+      <Label layoutX="603.0" layoutY="394.0" text="Prezime:" textFill="WHITE">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="573.0" layoutY="469.0" text="Email:" textFill="WHITE">
+      <Label layoutX="639.0" layoutY="460.0" text="Email:" textFill="WHITE">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="558.0" layoutY="547.0" text="Lozinka:" textFill="WHITE">
+      <Label layoutX="614.0" layoutY="539.0" text="Lozinka:" textFill="WHITE">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Label layoutX="565.0" layoutY="623.0" text="Indeks:" textFill="WHITE">
+      <Label layoutX="621.0" layoutY="604.0" text="Indeks:" textFill="WHITE">
          <font>
             <Font size="31.0" />
          </font>

@@ -89,7 +89,7 @@ public class Stranica {
 
     @Override
     public String toString() {
-        return "Stranica{" + "id=" + id + ", naslov=" + naslov + ", podNaslov=" + podNaslov + ", sadrzaj=" + sadrzaj + ", broj=" + broj + ", lekcija=" + lekcija + ", prvi=" + prvi + ", drugi=" + drugi + ", treci=" + treci + '}';
+        return "Stranica{" + "id=" + id + ", naslov=" + naslov + ", podNaslov=" + podNaslov + ", sadrzaj=" + sadrzaj + ", broj=" + broj + ", lekcija=" + lekcija +'}';
     }
     
     

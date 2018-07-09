@@ -56,7 +56,7 @@ public class LoginController implements Initializable {
             if (LoginService.login(email, password)) {
                 Node source = (Node) event.getSource();
                 Stage stage = (Stage)source.getScene().getWindow();
-                Utils.prikazi(stage, "Administracija");
+                Utils.prikazi(stage, "Izbornik");
             } else {
                 greskaLbl.setText("Netočan email ili lozinka");
             }
@@ -69,10 +69,6 @@ public class LoginController implements Initializable {
         Stage stage = (Stage)source.getScene().getWindow();
         Utils.prikazi(stage, "Registracija");
     }
-    
-     
-     
-    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

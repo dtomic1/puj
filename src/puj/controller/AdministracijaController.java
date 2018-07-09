@@ -60,8 +60,7 @@ public class AdministracijaController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         Osoba prijavljeni = LoginService.logiranaOsoba();
-        
-        
+ 
     }   
     
     

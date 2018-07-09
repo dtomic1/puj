@@ -9,7 +9,10 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import puj.model.Stranica;
 
 
 /**
@@ -29,5 +32,8 @@ public class Utils {
             
         }
     }
+    
+    
+
     
 }

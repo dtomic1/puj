@@ -4,19 +4,24 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puj.controller.IzbornikController">
    <children>
-      <TableView fx:id="tablica" layoutX="14.0" layoutY="132.0" onMouseClicked="#odaberiLekcija" prefHeight="484.0" prefWidth="376.0">
+      <TableView fx:id="tablica" layoutX="31.0" layoutY="154.0" onMouseClicked="#odaberiLekcija" prefHeight="596.0" prefWidth="954.0">
         <columns>
-          <TableColumn fx:id="tablicaId" prefWidth="44.0" text="ID" />
-          <TableColumn fx:id="tablicaNaslov" prefWidth="128.0" text="Naslov" />
-            <TableColumn fx:id="tablicaTrajanje" prefWidth="83.0" text="Trajanje" />
-            <TableColumn fx:id="tablicaTezina" minWidth="0.0" prefWidth="128.0" text="Tezina" />
-            <TableColumn fx:id="tablicaAutor" minWidth="0.0" prefWidth="62.0" text="Autor" />
+          <TableColumn fx:id="tablicaId" prefWidth="72.0" text="ID" />
+          <TableColumn fx:id="tablicaNaslov" prefWidth="407.0" text="Naslov" />
+            <TableColumn fx:id="tablicaTrajanje" prefWidth="175.0" text="Trajanje" />
+            <TableColumn fx:id="tablicaTezina" minWidth="0.0" prefWidth="167.0" text="Tezina" />
+            <TableColumn fx:id="tablicaAutor" minWidth="0.0" prefWidth="120.0" text="Autor" />
         </columns>
       </TableView>
-      <JFXButton fx:id="aaa" layoutX="646.0" layoutY="259.0" onAction="#test" prefHeight="109.0" prefWidth="141.0" text="Test" />
       <JFXButton fx:id="odjava" layoutX="912.0" layoutY="31.0" onAction="#odjava" prefHeight="93.0" prefWidth="106.0" text="." />
+      <JFXButton fx:id="admin" layoutX="51.0" layoutY="31.0" onAction="#administracija" prefHeight="93.0" prefWidth="370.0" text="Administracija" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

@@ -47,17 +47,17 @@ public class LekcijeController implements Initializable {
     @FXML
    JFXRadioButton pomlagano;
    
-   @FXML
-   JFXRadioButton pomsrednje;
+    @FXML
+    JFXRadioButton pomsrednje;
    
-   @FXML
-   JFXRadioButton pomnapredno;
+    @FXML
+    JFXRadioButton pomnapredno;
     
     
-     @FXML
+    @FXML
     TableView tablica;
     
-     @FXML
+    @FXML
     TableColumn tablicaId;
     
     @FXML
@@ -86,8 +86,7 @@ public class LekcijeController implements Initializable {
         tablicaAutor.setCellValueFactory(new PropertyValueFactory<>("autor"));
         
         tablica.setItems(lekcije);
-        
-        
+
     }
     
     @FXML
@@ -96,8 +95,7 @@ public class LekcijeController implements Initializable {
         Stage stage = (Stage)source.getScene().getWindow();
         Utils.prikazi(stage, "AdministracijaLekcija");
     }
-    
-      
+          
      @FXML
     public void brisiLekciju(ActionEvent evt) {
         LekcijaService.lekcijaService.brisi(this.odabranaLekcija);
@@ -109,15 +107,6 @@ public class LekcijeController implements Initializable {
         pomsrednje.setSelected(false);
         pomnapredno.setSelected(false);
     }
-    
-    
-    
-    
-    /*public void change(TableColumn.CellEditEvent celija){
-        Lekcija odabranaLekcija = (Lekcija) tablica.getSelectionModel().getSelectedItem();
-         
-    }
-    */
     
     @FXML
     public void odaberiLekciju (MouseEvent evt) {
@@ -170,9 +159,6 @@ public class LekcijeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
          this.popuniLekcije();
-         
-         
-         
     }    
     
 }

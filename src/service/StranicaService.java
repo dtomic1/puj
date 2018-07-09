@@ -16,6 +16,7 @@ import javafx.collections.ObservableList;
 import puj.controller.AdministracijaLekcijaController;
 import puj.model.Baza;
 import static puj.model.Baza.DB;
+import puj.model.Lekcija;
 import puj.model.Osoba;
 import puj.model.Stranica;
 
@@ -65,8 +66,28 @@ public class StranicaService implements model <Stranica> {
 
     
     @Override
-    public List<Stranica> sveIzBaze() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public ObservableList<Stranica> sveIzBaze() {
+        try {
+            ObservableList <Stranica> stranice = FXCollections.observableArrayList();
+            ResultSet rs = DB.select("SELECT * FROM stranica");
+            
+            while (rs.next()){
+                                          
+                stranice.add(new Stranica(
+                        rs.getInt(1), 
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getInt(5),
+                        rs.getInt(6)
+                                           
+                ));
+            }
+            return stranice;
+        } catch (SQLException ex) {
+            System.out.println("Greška prilikom izvršavanja upita: " + ex.getMessage());
+            return null;
+        } 
     }
     
     @Override
@@ -76,15 +97,15 @@ public class StranicaService implements model <Stranica> {
     
     
     @Override
-    public ObservableList<Stranica> dajStranice(int id) {
+    public ArrayList<Stranica> dajStranice(int id) {
        try {
-           ObservableList <Stranica> stranice = FXCollections.observableArrayList();
-            PreparedStatement upit = DB.prepare("SELECT lekcija.id, stranica.id, stranica.naslov, stranica.podnaslov, stranica.sadrzaj, stranica.broj, stranica.fk_lekcija FROM lekcija, stranica WHERE stranica.fk_lekcija = ?");
+           ArrayList <Stranica> stranice = new ArrayList<>();
+            PreparedStatement upit = DB.prepare("SELECT lekcija.id, stranica.id, stranica.naslov, stranica.podnaslov, stranica.sadrzaj, stranica.broj, stranica.fk_lekcija FROM lekcija, stranica WHERE stranica.fk_lekcija=lekcija.id AND stranica.fk_lekcija = ?");
             upit.setInt(1, id);
             
             upit.executeQuery();
             /* Dohvati id korisnika iz baze podataka */
-            ResultSet rs = upit.getGeneratedKeys();
+            ResultSet rs = upit.executeQuery();
             while(rs.next()){
                 
                 
@@ -100,13 +121,7 @@ public class StranicaService implements model <Stranica> {
                         
                 ));
                 
-                System.out.println(rs.getInt(1));
-                System.out.println(rs.getString(2));
-                System.out.println(rs.getString(3));
-                System.out.println(rs.getString(4));
-                System.out.println(rs.getInt(5));
-                System.out.println(rs.getInt(6));
-                System.out.println(stranice);
+                
             } return stranice;
             
         } catch (SQLException ex) {
